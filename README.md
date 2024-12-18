@@ -2,7 +2,7 @@
 
 Developer - Alexandra Holstensson
 
-[Link to the project]()
+[Link to the project](https://alexandrah-code.github.io/ms2-ShoppingList/)
 
 Image (mobile, tablet, desktop)
 
@@ -125,7 +125,7 @@ This project was deployed to GitHub pages. To deploy the project, follow these s
 6. The page can then be found under Deployments in the vertical menu bar on the right.
 7. Click on github-pages and there is a link to the page.
 
-Link to the project - 
+Link to the project - https://alexandrah-code.github.io/ms2-ShoppingList/
 
 ### Credits
 [Back To The Top](#table-of-contents)
