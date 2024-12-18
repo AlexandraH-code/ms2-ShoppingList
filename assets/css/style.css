@@ -1,8 +1,45 @@
 body {
-    background-color: cornflowerblue;
-}
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #484266;
+    /*background: linear-gradient(to right, #6DD5FA, #FF758C);*/
+    color: #FFFFFE;
+  }
 
-h1 {
-    color:firebrick;
-    font-family: Arial, Helvetica, sans-serif;
-}
+  #shopping-list-app {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #232946;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #shopping-list-form input[type="text"] {
+    width: 60%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+
+  #shopping-list-form button {
+    padding: 10px 20px;
+    background-color: #EEBBC3;
+    color: #232946;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+  }
+  
+  #shopping-list-form button:hover {
+    background-color: #B8C1EC;
+  }
