@@ -25,8 +25,16 @@ body {
 }
 
 #shopping-list-app h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
+}
+
+#shopping-list-app i {
+  /*height: 0.1rem;
+  width: 0.1rem;*/
+  margin-left: 10px;
+  /*display: block;
+  margin: auto;*/
 }
 
 #shopping-list-form input[type="text"] {
@@ -48,8 +56,6 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
   font-weight: bold;
-  /*margin-right: 40px;
-  margin-left: 40px;*/
   display: block;
   margin: auto;
 }
