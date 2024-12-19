@@ -1,51 +1,57 @@
+/* Google Fonts import - Cookie and Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #484266;
-    /*background: linear-gradient(to right, #6DD5FA, #FF758C);*/
-    color: #FFFFFE;
-  }
+  font-family: 'Cookie', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #484266;
+  /*background: linear-gradient(to right, #6DD5FA, #FF758C);*/
+  color: #FFFFFE;
+}
 
-  #shopping-list-app {
-    width: 80%;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #232946;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+#shopping-list-app {
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #232946;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  #shopping-list-app h1 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
+#shopping-list-app h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
 
-  #shopping-list-form input[type="text"] {
-    width: 80%;
-    padding: 10px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    margin-right: 10px;
-    margin-bottom: 15px;
-  }
+#shopping-list-form input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
 
-  #shopping-list-form button {
-    padding: 10px 20px;
-    background-color: #EEBBC3;
-    color: #232946;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-weight: bold;
-  }
-  
-  #shopping-list-form button:hover {
-    background-color: #B8C1EC;
-  }
+#shopping-list-form button {
+  padding: 10px 20px;
+  background-color: #EEBBC3;
+  color: #232946;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+#shopping-list-form button:hover {
+  background-color: #B8C1EC;
+}
