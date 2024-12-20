@@ -80,5 +80,28 @@ body {
   justify-content: space-between;
   align-items: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
+}
+
+/*#items-list checkbox {
+  width: 10px;
+  height: 10px;
+}*/
+
+#items-list button {
+  /*padding: 10px 20px; */
+  padding: 10px;
+  /*background-color: #EEBBC3;
+  color: #232946;*/
+  background-color: #232946;
+  color: #EEBBC3;
+  /*border: none;*/
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /*font-weight: bold;*/
+  font-weight: lighter;
+  display: block;
+  margin: auto;
 }
