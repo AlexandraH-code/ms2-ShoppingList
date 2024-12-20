@@ -2,8 +2,8 @@ const shoppingForm = document.getElementById('shopping-list-form');
 const shoppingInput = document.getElementById('item-input');
 const shoppingList = document.getElementById('items-list');
 
-shoppingForm.addEventListener('submit', function (event) {
-  event.preventDefault();
+shoppingForm.addEventListener('submit', function (e) {
+  e.preventDefault();
   const newItem = shoppingInput.value; //newItem takes the information that the user has written in the text field
 
   // If the user tries to submit the form without having written anything in the text field an error message pops up
@@ -22,11 +22,11 @@ shoppingForm.addEventListener('submit', function (event) {
 function addItem(newItem) {
   const listItem = document.createElement('li');
   const checkBox = document.createElement('input');
+  const itemText = document.createElement('span');
+
   checkBox.setAttribute('type', 'checkbox');
   listItem.appendChild(checkBox);
 
-  const itemText = document.createElement('span');
-  //listItem.textContent = newItem;
   itemText.textContent = newItem;
   listItem.appendChild(itemText);
 
@@ -52,6 +52,7 @@ function addItem(newItem) {
   deleteButton.addEventListener('click', function () {
     // Deletes item from the list
     shoppingList.removeChild(listItem);
+    saveItemsToLocalStorage();
   });
 
   editButton.addEventListener('click', function () {
@@ -74,4 +75,24 @@ function addItem(newItem) {
       editButton.textContent = 'Save';
     }
   });
+
+  saveItemsToLocalStorage();
 }
+
+function saveItemsToLocalStorage() {
+  const items = [];
+  document.querySelectorAll('#items-list li').forEach(item => {
+      const itemText = item.querySelector('span').textContent;
+      const isCompleted = item.classList.contains('completed');
+      items.push({ text: itemText, completed: isCompleted });
+  });
+  localStorage.setItem('items', JSON.stringify(items));
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  /*const savedItems = JSON.parse(localStorage.getItem('items')) || [];*/
+  const savedItems = JSON.parse(localStorage.getItem('items'));
+  savedItems.forEach(item => {
+      addItem(item.text);
+  });
+});
