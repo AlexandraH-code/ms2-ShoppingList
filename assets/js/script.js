@@ -4,8 +4,9 @@ const shoppingList = document.getElementById('items-list');
 
 shoppingForm.addEventListener('submit', function(event) {
     event.preventDefault();
-    const newItem = shoppingInput.value;
+    const newItem = shoppingInput.value; //newItem takes the information that the user has written in the text field
   
+    // If the user tries to submit the form without having written anything in the text field an error message pops up
     if (newItem === '') {
         alert('Please enter an item that you want to buy!');
         return;
