@@ -83,10 +83,9 @@ body {
   font-size: 1rem;
 }
 
-/*#items-list checkbox {
-  width: 10px;
-  height: 10px;
-}*/
+#items-list input[type=text] {
+  width: 40%;
+}
 
 #items-list button {
   /*padding: 10px 20px; */
