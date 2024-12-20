@@ -1,0 +1,108 @@
+/* Google Fonts import - Cookie and Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*height: 100vh;*/
+  /*Uncomment if app should be center center */
+  margin: 0;
+  background-color: #484266;
+  /*background: linear-gradient(to right, #6DD5FA, #FF758C);*/
+  color: #FFFFFE;
+}
+
+#shopping-list-app {
+  width: 80%;
+  height: auto;
+  /* Comment out if app should be center center */
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #232946;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#shopping-list-app h1 {
+  font-family: 'Cookie', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#shopping-list-app i {
+  /*height: 0.1rem;
+  width: 0.1rem;*/
+  margin-left: 10px;
+  /*display: block;
+  margin: auto;*/
+}
+
+#shopping-list-form input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+#shopping-list-form button {
+  padding: 10px 20px;
+  background-color: #EEBBC3;
+  color: #232946;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  display: block;
+  margin: auto;
+}
+
+#shopping-list-form button:hover {
+  background-color: #B8C1EC;
+}
+
+#items-list {
+  list-style: none;
+  padding: 0;
+}
+
+#items-list li {
+  background-color: #EEBBC3;
+  color: #232946;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+}
+
+#items-list input[type=text] {
+  width: 40%;
+}
+
+#items-list button {
+  /*padding: 10px 20px; */
+  padding: 10px;
+  /*background-color: #EEBBC3;
+  color: #232946;*/
+  background-color: #232946;
+  color: #EEBBC3;
+  /*border: none;*/
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /*font-weight: bold;*/
+  font-weight: lighter;
+  display: block;
+  margin: auto;
+}
