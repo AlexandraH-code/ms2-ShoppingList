@@ -104,3 +104,8 @@ body {
   display: block;
   margin: auto;
 }
+
+.purchased span {
+  text-decoration: line-through;
+  color:  #232946;
+}
