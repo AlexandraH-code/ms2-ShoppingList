@@ -1,100 +1,110 @@
-// Function that adds an item to the shopping list
+// Shopping list function
+// You can add an item to the shopping list.
+// Check an item that you have purchased.
+// Edit an item.
+// Delete an item.
+// The list is saved to localStorage.
 function addItem(e) {
-  e.preventDefault();
+  e.preventDefault(); // Prevents the form's default action (refreshing the page)
 
   const itemInput = document.getElementById('item-input');
 
   const itemText = itemInput.value.trim();
-    
+
+  // If you try to submit the form without having filled in anything in the item-input (text box), you will get an error message.
   if (itemText === "") {
-      alert("Enter an item that you want to buy!");
-      return;
+    alert("Enter an item that you want to buy!");
+    return;
   }
 
   const shoppingList = document.getElementById('items-list');
-    
-  // Create a list item (li)
+
+  // Creates a list item (li)
   const li = document.createElement('li');
-  
-  // Create a checkbox
+
+  // Creates a checkbox
   const checkbox = document.createElement('input');
   checkbox.type = 'checkbox';
-  
-  // Create a text for the item
+
+  // Creates a text for the item
   const itemSpan = document.createElement('span');
   itemSpan.textContent = itemText;
-  
-  // Create a button to delete the item
+
+  // Creates a button to delete the item
   const removeButton = document.createElement('button');
   removeButton.textContent = 'Delete';
   removeButton.onclick = function () {
-      shoppingList.removeChild(li);
-      /*--------*/
-      saveList(); // Spara listan efter borttagning
-      /*--------*/
+    shoppingList.removeChild(li);
+    /*--------*/
+    saveList(); // Saves the list after an item is deleted
+    /*--------*/
   };
-  
-  // Create a button to edit the item
+
+  // Creates a button that allows you to edit an item.
   const editButton = document.createElement('button');
   editButton.textContent = 'Edit';
   editButton.onclick = function () {
-      const newItem = prompt("Edit the item:", itemSpan.textContent);
-      if (newItem) {
-          itemSpan.textContent = newItem;
-          /*----------*/
-          saveList(); // Spara listan efter redigering
-          /*----------*/
-      }
+    const newItem = prompt("Edit the item:", itemSpan.textContent);
+    if (newItem) {
+      itemSpan.textContent = newItem;
+      /*----------*/
+      saveList(); // Saves the list after an item is edited
+      /*----------*/
+    }
   };
-  
+
   // Add checkbox, text, edit and delete button to li
   li.appendChild(checkbox);
   li.appendChild(itemSpan);
   li.appendChild(editButton);
   li.appendChild(removeButton);
-  
+
   // Add the new item to the list
   shoppingList.appendChild(li);
-  
+
   // Clear input field
   itemInput.value = "";
 
-  checkbox.addEventListener('change', function() {
+  // EventListener for the checkbox
+  checkbox.addEventListener('change', function () {
     if (checkbox.checked) {
-      li.classList.add('purchased'); // Lägg till purchased-klassen om checkboxen är markerad
+      li.classList.add('purchased'); // Adds the purchased class if the checkbox is checked
     } else {
-      li.classList.remove('purchased'); // Ta bort purchased-klassen om checkboxen inte är markerad
+      li.classList.remove('purchased'); // Removes the purchased class if the checkbox is not checked.
     }
 
     /*---------------*/
-    saveList(); // Spara listan när en checkbox ändras
+    saveList(); // Saves the list when a checkbox is changed
     /*---------------*/
   });
 
   /*-----------------------------*/
-  saveList(); // Spara listan när en ny vara läggs till
+  saveList(); // Saves the list when a new item is added
   /*---------------------------- */
 }
 
 /*------------------------------*/
 
-// Save the shopping list to localStorage
+// Saves the list to localStorage
 function saveList() {
   const shoppingList = document.getElementById('items-list');
   const items = [];
 
-  // Loop through each list item and save its information
+  // Loops through each list item and save its information
   shoppingList.querySelectorAll('li').forEach((li) => {
     const itemText = li.querySelector('span').textContent;
     const isChecked = li.querySelector('input[type="checkbox"]').checked;
-    items.push({ text: itemText, checked: isChecked });
+    items.push({
+      text: itemText,
+      checked: isChecked
+    });
   });
 
-  // Store the list items in localStorage
+  // Stores the list items in localStorage
   localStorage.setItem('shoppingList', JSON.stringify(items));
 }
 
-// Load the shopping list from localStorage
+// Loads the shopping list from localStorage
 function loadList() {
   const savedList = localStorage.getItem('shoppingList');
 
@@ -102,7 +112,7 @@ function loadList() {
     const items = JSON.parse(savedList);
     const shoppingList = document.getElementById('items-list');
 
-    // Recreate the list from saved data
+    // Recreates the list from saved data
     items.forEach(item => {
       const li = document.createElement('li');
       const checkbox = document.createElement('input');
@@ -116,19 +126,19 @@ function loadList() {
       removeButton.textContent = 'Delete';
 
       removeButton.onclick = function () {
-          shoppingList.removeChild(li);
-          saveList(); // Spara listan efter borttagning
+        shoppingList.removeChild(li);
+        saveList(); // Save the list after deletion
       };
 
       const editButton = document.createElement('button');
       editButton.textContent = 'Edit';
       editButton.onclick = function () {
-          const newItem = prompt("Edit the item:", itemSpan.textContent);
+        const newItem = prompt("Edit the item:", itemSpan.textContent);
 
-          if (newItem) {
-              itemSpan.textContent = newItem;
-              saveList(); // Spara listan efter redigering
-          }
+        if (newItem) {
+          itemSpan.textContent = newItem;
+          saveList(); // Saves the list after editing
+        }
       };
 
       li.appendChild(checkbox);
@@ -143,13 +153,13 @@ function loadList() {
       }
 
       // Add event listener to checkbox
-      checkbox.addEventListener('change', function() {
+      checkbox.addEventListener('change', function () {
         if (checkbox.checked) {
           li.classList.add('purchased');
         } else {
           li.classList.remove('purchased');
         }
-        saveList(); // Spara listan när en checkbox ändras
+        saveList(); // Saves the list when a checkbox is changed
       });
     });
   }
@@ -157,13 +167,13 @@ function loadList() {
 
 /*------------------------------*/
 
-// Add an event listener for the form submit
+// Adds an event listener for the form submit
 const form = document.getElementById('shopping-list-form');
 form.addEventListener('submit', addItem);
 
 /*------------------------------*/
 
-// Load the shopping list when the page loads
+// Loads the shopping list when the page loads
 window.addEventListener('load', loadList);
 
 /*------------------------------*/
