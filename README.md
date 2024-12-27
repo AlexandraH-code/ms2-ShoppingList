@@ -9,13 +9,15 @@ Image (mobile, tablet, desktop)
 ## Table of Contents
 - [About](#about)
 - [User Goals](#user-goals)
+  - [External User Goals](#external-user-goals)
+  - [Site Owner Goals](#site-owner-goals)
 - [User Stories](#user-stories)
 - [Design Of The Website](#design-of-the-website)
   - [Structure](#structure)
   - [Wireframes](#wireframes)
   - [Colors](#colors)
   - [Fonts](#fonts)
-  - [Logo](#logo)
+  - [Icon And Image](#icon-and-image)
 - [Existing Features](#existering-features)
   - [Add Items](#add-items)
   - [Edit Items](#edit-items)
@@ -55,19 +57,82 @@ My Shopping List has the following functions:
 - edit items
 - delete items
 
+What is added to the shopping list is saved in localStorage. This means that what is added to the shopping list remains there even if you refresh the page or close it.
+
 ### User Goals
 [Back To The Top](#table-of-contents)
 
+#### External User Goals
+
+- Be able to create a shopping list.
+- Be able to edit and delete items in the shopping list.
+- Be able to have the shopping list saved even if you refresh or close the page.
+
+#### Site owner Goals
+
+- Provide the ability for users/visitors to create a shopping list where items can be added, removed and edited.
+
 ### User Stories
+[Back To The Top](#table-of-contents)
+
+- As a visitor to the site, I want it to be usable on all types of screen sizes and devices (e.g. mobile, tablet, computer). This is so that I will not be dependent on a particular type of device.
+
+- As a visitor to the site, I want it to be usable on all types of screen sizes and devices (e.g. mobile, tablet, computer). This is so that I will not be dependent on a particular type of device.
+
+- As a visitor to the site, I want to be able to add items to the shopping list. This is so that I can see a summary of the items I intend to buy.
+
+- As a visitor to the site, I want to be able to check off the items I have added to my shopping cart/picked up. This is so that I can easily see how many items are left (to buy).
+
+- As a user of the site, I want to be able to edit and delete items that I have added to the shopping list. This is so that I cac delete things that I don't need or edit them if I realize that I need to make a change to something I have intended to buy.
+
+- As a user of the site, I want the items I have added to the shopping list to remain even if I refresh the site or close it. This is so that I can easily continue on an existing shopping list if I come across more items that I want to add (or if I want to edit or delete one).
 
 ### Design Of The Website
 [Back To The Top](#table-of-contents)
 
 #### Structure
+
+I have chosen not to have a main navigation menu on my site. This is because all functions fit on a single page. Therefore, there is no reason to have a navigation menu.
+
+I have also chosen to have the main function for my page centered (horizontally) on the page because I think it looks the best.
+
 #### Wireframes
+
+![Wireframes](assets/images/wireframes/wireframes.jpg)
+
 #### Colors
+
+When I chose which colors to use on my page, I based my choice on the palette below, which is available at [Happy Hues](https://www.happyhues.co/).
+
+[Link to the color palette that I have chosen](https://www.happyhues.co/palettes/12)
+
+![Color Palette](assets/images/colors/colors_6_2.jpg)
+
+In order to create a gradient for the background color of the function itself, I used [ColorSpace](https://mycolor.space/). I have chosen to use #484266 as background color on my site.
+
+[Link to my color gradient](https://mycolor.space/?hex=%23232946&sub=1) (See Matching Gradient)
+
+![Color Gradient](assets/images/colors/matching_gradient.jpg)
+
 #### Fonts
-#### Logo
+
+To figure out which fonts to use on my site, I used [Easil's The Ultimate Free Font Pairing Guide](https://about.easil.com/free-font-pairing-guide-templates/). Here I chose the font Cookie because I wanted a font that looked a bit hand-written. In the pairing guide, the font Cookie is paired with the fonts Raleway and Roboto. Here I chose to use the font Roboto. I then downloaded the fonts from [Google Fonts](https://fonts.google.com/).
+
+Links to the fonts:
+- [Cookie](https://fonts.google.com/specimen/Cookie)
+- [Roboto](https://fonts.google.com/specimen/Roboto)
+
+#### Icon And Image
+
+I have chosen to have a favicon on my site. The favicon was created from an image of a shopping basket that I found on [Open Clipart](https://openclipart.org/). To create the favicon itself, I then used [favicon.io](https://favicon.io/).
+
+[Link to the image of the shopping basket](https://openclipart.org/detail/301004/basket-2)
+
+The image of the shopping basket on the page is an icon that comes from [Font Awsome](https://fontawesome.com/).
+
+[Link to the shopping basket](https://fontawesome.com/v6/icons/basket-shopping?f=classic&s=solid)
+
+
 
 ### Existering Features
 [Back To The Top](#table-of-contents)
