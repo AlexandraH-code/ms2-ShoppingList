@@ -4,7 +4,7 @@ Developer - Alexandra Holstensson
 
 [Link to the project](https://alexandrah-code.github.io/ms2-ShoppingList/)
 
-Image (mobile, tablet, desktop)
+![Image Of The Site](assets/images/am_I_responsive/am_I_responsive.jpg)
 
 ## Table of Contents
 - [About](#about)
@@ -231,7 +231,12 @@ To my shopping list, you could also add the ability to print the shopping list (
 ### Lighthouse Testing
 [Back To The Top](#table-of-contents)
 #### Desktop
+
+![Image Of Lighthouse Test - Desktop](assets/images/lighthouse/lighthouse_desktop.jpg)
+
 #### Mobile
+
+![Image Of Lighthouse Test - Mobile](assets/images/lighthouse/lighthouse_mobile.jpg)
 
 ### Device Testing
 [Back To The Top](#table-of-contents)
