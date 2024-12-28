@@ -19,9 +19,10 @@ Image (mobile, tablet, desktop)
   - [Fonts](#fonts)
   - [Icon And Image](#icon-and-image)
 - [Existing Features](#existering-features)
-  - [Add Items](#add-items)
-  - [Edit Items](#edit-items)
-  - [Delete Items](#delete-items)
+  - [Add Item](#add-items)
+  - [Edit Item](#edit-items)
+  - [Delete Item](#delete-items)
+  - [Save Shopping List To localStorage](#save-shopping-list-to-localstorage)
 - [Features Left To Implement](#features-left-to-implement)
 - [Technologies Used](#technologies-used)
   - [Languages](#languages)
@@ -32,6 +33,7 @@ Image (mobile, tablet, desktop)
     - [Test - Add Items](#test---add-items)
     - [Test - Edit Items](#test---edit-items)
     - [Test - Delete Items](#test---delete-items)
+    - [Test - Shopping List Saved To Local Storage](#test---shopping-list-saved-to-local-storage)
 - [Bugs](#bugs)
 - [Validation](#validation)
   - [HTML](#html)
@@ -133,31 +135,92 @@ The image of the shopping basket on the page is an icon that comes from [Font Aw
 [Link to the shopping basket](https://fontawesome.com/v6/icons/basket-shopping?f=classic&s=solid)
 
 
-
 ### Existering Features
 [Back To The Top](#table-of-contents)
-#### Add Items
-#### Edit Items
-#### Delete Items
+#### Add Item
+
+To add an item to the shopping list, you enter the item in the text field and then click the Add item button. The item will then be added to the shopping list itself, which will be located below the form. In addition to the item name, a checkbox and an Edit and a Delete button also appear.
+
+![Image Of Add Item Feature](assets/images/features/add_item/add_item_1.jpg)
+
+![Image Of Add Item Feature](assets/images/features/add_item/add_item_2.jpg)
+
+If you have purchased an item/added an item to your shopping cart, you can check the checkbox next to that item. The item name will then be crossed out.
+
+![Image Of Add Item Feature](assets/images/features/add_item/checked_item.jpg)
+
+If you click the Add item button without having entered anything in the text box, a pop-up box will appear asking you to enter an item.
+
+![Image Of Add Item Feature](assets/images/features/add_item/add_item_empty.jpg)
+
+#### Edit Item
+
+When you click the Edit button, a pop-up box appears. In it, you can make the change you want to make and then click Ok. The shopping list will then be updated with the change you have made.
+
+![Image Of Edit Item Feature](assets/images/features/edit_item/edit_item_1.jpg)
+
+![Image Of Edit Item Feature](assets/images/features/edit_item/edit_item_2.jpg)
+
+![Image Of Edit Item Feature](assets/images/features/edit_item/edit_item_3.jpg)
+
+#### Delete Item
+
+If you want to delete an item, click the Delete button next to that item. The item will then be removed from the shopping list.
+
+![Image Of Delete Item Feature](assets/images/features/delete_item/delete_item_1.jpg)
+![Image Of Delete Item Feature](assets/images/features/delete_item/delete_item_2.jpg)
+
+#### Save shopping list to localStorage
+
+I have chosen to save the shopping list to localStorage. This is to be able to update or close the page without having to worry about the shopping list disappearing (see manual testing section to see how this feature works).
 
 ### Features Left To Implement
 [Back To The Top](#table-of-contents)
 
+To my shopping list, you could also add the ability to print the shopping list (if you prefer to have it in paper form). You could also add a function that makes it possible to sort the shopping list by a specific store (i.e. the shopping list is sorted by how a specific store is planned).
+
 ### Technologies Used
 [Back To The Top](#table-of-contents)
 #### Languages
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
 #### Programs And Other Resources
+
+- [Responsinator](http://www.responsinator.com/) - Used to check how the site looks on different devices and how responsive it is
+- [Am I Responsive](https://ui.dev/amiresponsive) - Used to check how the site looks on different devices and how responsive it is
+- [tinypng](https://tinypng.com/) - Used to compress images
+- [HTML Validator](https://validator.w3.org/nu/) - Used to validate the HTML files
+- [CSS Validator](https://jigsaw.w3.org/css-validator/) - Used to validate the CSS file
+- [Open Clipart](https://openclipart.org/) - The image of the shopping basket can be found here
+- [Favicon](https://favicon.io/favicon-converter/) - Used to generate the favicon
+- [Fontawsome](https://fontawesome.com/) - For the shopping basket icon
+- [Happy Hues](https://www.happyhues.co/) - for the color palette that I have chosen to use  
+- [ColorSpace](https://mycolor.space/) - to find a color gradient to the background color on my shopping list function
+- [Easils font pairing guide](https://about.easil.com/free-font-pairing-guide-templates/) - to find the fonts that I have chosen to use
+- [Google Fonts](https://fonts.google.com/) - to download the fonts that I have chosen to use (Cookie and Roboto)
 
 ### Testing
 [Back To The Top](#table-of-contents)
 #### User Story Testing
+
+| Feature | User Story | Expected Result | Pass |
+|---------|------------|-----------------|------|
+
+
 #### Manual Testing
 ##### Test - Add Items
 ##### Test - Edit Items
 ##### Test - Delete Items
+##### Test - Shopping List Saved To Local Storage
 
 ### Bugs
 [Back To The Top](#table-of-contents)
+
+| Problem | Solution | Source of help |
+|---------|----------|----------------|
 
 ### Validation
 [Back To The Top](#table-of-contents)
@@ -172,8 +235,20 @@ The image of the shopping basket on the page is an icon that comes from [Font Aw
 
 ### Device Testing
 [Back To The Top](#table-of-contents)
+
+In addition to my laptop (a Dell Vostro 3520), I have tested the site on my mobile phone, a Samsung Galaxy S24 Ultra, and on my tablet, a Samsung Galaxy Tab S8. The site works, and looks, as it should on all devices.
+
+Then I have also tested my site on [Am I Responsive](https://ui.dev/amiresponsive) and [Responsinator](http://www.responsinator.com/) to see how it looks on other devices and if it is responsive.
+
 ### Browser Compatibility
 [Back To The Top](#table-of-contents)
+
+I have used the browsers below to test my site. The site looks as it should and works as it should in all browsers.
+
+- Google Chrome (my primary browser)
+- Microsoft Edge
+- Opera
+- Firefox
 
 ### Deployment
 [Back To The Top](#table-of-contents)
