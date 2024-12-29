@@ -201,6 +201,7 @@ To my shopping list, you could also add the ability to print the shopping list (
 - [ColorSpace](https://mycolor.space/) - to find a color gradient to the background color on my shopping list function
 - [Easils font pairing guide](https://about.easil.com/free-font-pairing-guide-templates/) - to find the fonts that I have chosen to use
 - [Google Fonts](https://fonts.google.com/) - to download the fonts that I have chosen to use (Cookie and Roboto)
+- [W3Schools](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) - to find breakpoints for different devices
 
 ### Testing
 [Back To The Top](#table-of-contents)

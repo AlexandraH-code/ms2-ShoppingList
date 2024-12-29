@@ -26,7 +26,7 @@ body {
 
 #shopping-list-app h1 {
   font-family: 'Cookie', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   text-align: center;
 }
 
@@ -83,7 +83,11 @@ body {
   font-size: 1rem;
 }
 
-#items-list input[type=text] {
+/*#items-list input[type=text] {
+  width: 40%;
+}*/
+
+#items-list span {
   width: 40%;
 }
 
@@ -108,4 +112,72 @@ body {
 .purchased span {
   text-decoration: line-through;
   color:  #232946;
+}
+
+/* Media queries */
+/* Media query: Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+ #shopping-list-app h1 {
+    font-size: 2.1rem;
+  }
+
+  #items-list span {
+    width: 50%;
+  }
+
+  #items-list button {
+    /*padding: 10px 20px; */
+    padding: 10px 20px;
+    /*background-color: #EEBBC3;
+    color: #232946;*/
+    background-color: #232946;
+    color: #EEBBC3;
+    /*border: none;*/
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /*font-weight: bold;*/
+    font-weight: lighter;
+    display: block;
+    margin: auto;
+  }
+}
+
+/* Media query: Medium devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  #shopping-list-app h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Media query: Large devices (laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  #shopping-list-app {
+    width: 80%;
+    max-width: 600px;
+  }
+
+  #shopping-list-app h1 {
+    font-size: 2.5rem;
+  }
+
+  #shopping-list-form input[type="text"] {
+    font-size: 1.2rem;
+  }
+
+  #shopping-list-form button {
+    padding: 20px 40px;
+    font-size: 1.2rem;
+  }
+
+  #items-list span {
+    font-size: 1.5rem;
+  }
+
+  #items-list button {
+    padding: 20px 40px;
+    font-weight: lighter;
+    font-size: 1.2rem;
+  }
 }
