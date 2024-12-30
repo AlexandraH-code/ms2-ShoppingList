@@ -31,8 +31,8 @@ Developer - Alexandra Holstensson
   - [User Story Testing](#user-story-testing)
   - [Manual Testing](#manual-testing)
     - [Test - Add Item](#test---add-item)
-    - [Test - Check Item](#test---check-item)
     - [Test - Edit Item](#test---edit-item)
+    - [Test - Check Item](#test---check-item)
     - [Test - Delete Item](#test---delete-item)
     - [Test - Shopping List Saved To Local Storage](#test---shopping-list-saved-to-local-storage)
 - [Bugs](#bugs)
@@ -211,7 +211,7 @@ To my shopping list, you could also add the ability to print the shopping list (
 - [tinypng](https://tinypng.com/) - Used to compress images
 - [HTML Validator](https://validator.w3.org/nu/) - Used to validate the HTML files
 - [CSS Validator](https://jigsaw.w3.org/css-validator/) - Used to validate the JavaScript code
-- [JavaScript validator](https://www.site24x7.com/tools/javascript-validator.html) - Used to validate the JavaScript code
+- [Site24x7's JavaScript validator](https://www.site24x7.com/tools/javascript-validator.html) - Used to validate the JavaScript code
 - [JShint](https://jshint.com/) - Used to validate the JavaScript Code
 - [Open Clipart](https://openclipart.org/) - The image of the shopping basket can be found here
 - [Favicon](https://favicon.io/favicon-converter/) - Used to generate the favicon
@@ -243,8 +243,6 @@ To test that it works to add an item, I enter an item in the text field (where i
 
 ![Image Of Add Item Test](assets/images/manual_testing/add/add_item.jpg)
 
-#### Test - Check Item
-
 ##### Test - Edit Item
 
 To test that it is possible to edit an item, I click on the Edit button. A pop-up box opens where I can make the desired change.
@@ -257,10 +255,25 @@ To save the change, I click on the Ok button. The item is then updated in the li
 
 If I change my mind and do not want to make any changes to the item, I click on the button that says Cancel (or Avbryt as it says on the button as the text is in Swedish for me). The item will then (for natural reasons) not change.
 
+#### Test - Check Item
 
+To test that the check item function works as it should, I click in the checkbox next to an item. The item's text then gets a line through it. Which is the idea of ​​the function.
+
+![Image Of Check Item Test](assets/images/manual_testing/check/check_item.jpg)
 
 ##### Test - Delete Item
+
+To see how the Delete item function works, I click the Delete button on the item (milk) that I checked in the Check item test. When I click the Delete button, the item milk disappears from the list.
+
+![Image Of Delete Item Test](assets/images/manual_testing/delete/delete_item.jpg)
+
 ##### Test - Shopping List Saved To Local Storage
+
+To ensure that the shopping list is saved correctly to localStorage, I choose to check the checkbox next to an item, delete an item and edit an item. I then refresh the page to see that it looks the same as it did before updating the page. I also choose to close the page and reopen it. The page looks the same both if I refresh the page and if I close the page and reopen it. This means that the page is saved correctly to localStorage.
+
+![Image Of Shopping List Saved To Local Storage Test](assets/images/manual_testing/localStorage/localStorage_1.jpg)
+
+![Image Of Shopping List Saved To Local Storage Test](assets/images/manual_testing/localStorage/localStorage_2.jpg)
 
 ### Bugs
 [Back To The Top](#table-of-contents)
@@ -294,6 +307,8 @@ I used [the W3C Markup Validation Service](https://validator.w3.org/) to validat
 I used [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate the CSS. The validation passed without showing any errors.
 
 ![Image That Shows The Result Of The Validation Of The HTML](assets/images/validation/CSS.jpg)
+
+[Link To The Validation Of The CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Falexandrah-code.github.io%2Fms2-ShoppingList%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 #### JavaScript
 
