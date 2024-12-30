@@ -6,16 +6,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*height: 100vh;*/ /*Uncomment if app should be center center */
   margin: 0;
   background-color: #484266;
-  /*background: linear-gradient(to right, #6DD5FA, #FF758C);*/
   color: #FFFFFE;
 }
 
 #shopping-list-app {
   width: 80%;
-  height: auto; /* Comment out if app should be center center */
+  height: auto; 
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
@@ -31,11 +29,7 @@ body {
 }
 
 #shopping-list-app i {
-  /*height: 0.1rem;
-  width: 0.1rem;*/
   margin-left: 10px;
-  /*display: block;
-  margin: auto;*/
 }
 
 #shopping-list-form input[type="text"] {
@@ -68,6 +62,7 @@ body {
 #items-list {
   list-style: none;
   padding: 0;
+  margin: 10px;
 }
 
 #items-list li {
@@ -83,28 +78,23 @@ body {
   font-size: 1rem;
 }
 
-/*#items-list input[type=text] {
-  width: 40%;
-}*/
+#items-list input[type=checkbox] {
+  margin-left: 5px;
+}
 
 #items-list span {
   width: 40%;
 }
 
 #items-list button {
-  /*padding: 10px 20px; */
   padding: 10px;
-  /*background-color: #EEBBC3;
-  color: #232946;*/
   background-color: #232946;
   color: #EEBBC3;
-  /*border: none;*/
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
-  /*font-weight: bold;*/
-  font-weight: lighter;
+  font-weight: normal;
   display: block;
   margin: auto;
 }
@@ -126,19 +116,14 @@ body {
   }
 
   #items-list button {
-    /*padding: 10px 20px; */
     padding: 10px 20px;
-    /*background-color: #EEBBC3;
-    color: #232946;*/
     background-color: #232946;
     color: #EEBBC3;
-    /*border: none;*/
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
-    /*font-weight: bold;*/
-    font-weight: lighter;
+    font-weight: normal;
     display: block;
     margin: auto;
   }
@@ -159,25 +144,24 @@ body {
   }
 
   #shopping-list-app h1 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 
   #shopping-list-form input[type="text"] {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   #shopping-list-form button {
-    padding: 20px 40px;
-    font-size: 1.2rem;
+    padding: 10px 30px;
+    font-size: 1.1rem;
   }
 
   #items-list span {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 
   #items-list button {
-    padding: 20px 40px;
-    font-weight: lighter;
-    font-size: 1.2rem;
+    padding: 10px 30px;
+    font-size: 1.1rem;
   }
 }

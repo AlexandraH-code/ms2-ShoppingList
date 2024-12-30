@@ -52,7 +52,7 @@ Developer - Alexandra Holstensson
 ### About 
 [Back To The Top](#table-of-contents)
 
-My Shopping List is a website where you can create a shopping list. 
+My Shopping List is a website where you can create a shopping list of items that you want to buy. 
 
 My Shopping List has the following functions:
 - add items
@@ -209,7 +209,12 @@ To my shopping list, you could also add the ability to print the shopping list (
 
 | Feature | User Story | Expected Result | Pass |
 |---------|------------|-----------------|------|
-
+| Entire site | As a visitor of the site, I want it to be usable on all types of screen sizes and devices (e.g. mobile, tablet, computer). This is so that I will not be dependent on a particular type of device. | The site works on different devices (e.g. mobile, tablet, computer) and screen sizes. | &check; |
+| Entire site | As a visitor to the website, I want it to be easy to use. This is so that I don't have to spend a lot of time learning how it works. | The site is easy to use and understand. | &check; |
+| Add item | As a visitor to the site, I want to be able to add items to the shopping list. This is so that I can see a summary of the items I intend to buy. | The visitor can add items to the shopping list. | &check; |
+| Checkbox next to item | As a visitor to the site, I want to be able to check off the items I have added to my shopping cart/picked up. This is so that I can easily see how many items are left. | The visitor can check off items that have been added to the shopping cart/that have already been purchased. | &check; |
+| Edit and delete item | As a user of the site, I want to be able to edit and edit items that I have added to the shopping list. This is so that I can remove things that I don't need or change them if I realize that I need to make a change to something I have intended to buy. | The user can edit and delete items that are saved to the shopping list. | &check; |
+| Save shopping list | As a user of the site, I want the items I have added to the shopping list to remain even if I update the site or close it. This is so that I can easily continue on an existing shopping list if I come across more items that I want to add (or if I want to edit or delete one). | The shopping list is saved (to localStorage) so it does not disappear if the user update or close the page. | &check; |
 
 #### Manual Testing
 ##### Test - Add Items
@@ -220,8 +225,19 @@ To my shopping list, you could also add the ability to print the shopping list (
 ### Bugs
 [Back To The Top](#table-of-contents)
 
-| Problem | Solution | Source of help |
-|---------|----------|----------------|
+The biggest problem I've encountered when making my site (and which I haven't really solved exactly as I wanted) is the following:
+
+From the beginning, I had planned for the main function of the page to be centered both horizontally and vertically.
+
+The problem that arose then was that if you add so many items to the shopping cart that the list does not fit on one screen height (i.e. you need to scroll), the content at the top of the page will be “pushed” off the screen. 
+
+![Image That Shows The Problem](assets/images/bug/bug_heading.jpg)
+
+To try to solve the problem, I looked into whether scrolling had anything to do with it. However, changing the scroll has no effect on the problem. If you add too many items, what is at the top will disappear over time. This is because for each item added to the list, the function itself is enlarged to the same height as the item added to the list. This means that after a while, content will be pushed outside the "screen".
+
+I haven't found a solution to the problem where I can have the list centered both vertically and horizontally. So the solution for now is to only have the list centered horizontally.
+
+Even though the page doesn't look exactly as I had originally envisioned (with the content centered both horizontally and vertically), I'm happy with how it looks now.
 
 ### Validation
 [Back To The Top](#table-of-contents)

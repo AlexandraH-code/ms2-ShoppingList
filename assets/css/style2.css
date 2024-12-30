@@ -6,8 +6,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*height: 100vh;*/
-  /*Uncomment if app should be center center */
+  /*height: 100vh;*/ /*Uncomment if app should be center center */
   margin: 0;
   background-color: #484266;
   /*background: linear-gradient(to right, #6DD5FA, #FF758C);*/
@@ -16,8 +15,7 @@ body {
 
 #shopping-list-app {
   width: 80%;
-  height: auto;
-  /* Comment out if app should be center center */
+  height: auto; /* Comment out if app should be center center */
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
@@ -28,7 +26,7 @@ body {
 
 #shopping-list-app h1 {
   font-family: 'Cookie', sans-serif;
-  font-size: 2rem;
+  font-size: 2.0rem;
   text-align: center;
 }
 
@@ -70,6 +68,7 @@ body {
 #items-list {
   list-style: none;
   padding: 0;
+  margin: 10px;
 }
 
 #items-list li {
@@ -82,10 +81,14 @@ body {
   justify-content: space-between;
   align-items: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
-#items-list input[type=text] {
+#items-list input[type=checkbox] {
+  margin-left: 10px;
+}
+
+#items-list span {
   width: 40%;
 }
 
@@ -105,4 +108,76 @@ body {
   font-weight: lighter;
   display: block;
   margin: auto;
+}
+
+.purchased span {
+  text-decoration: line-through;
+  color:  #232946;
+}
+
+/* Media queries */
+/* Media query: Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+ #shopping-list-app h1 {
+    font-size: 2.1rem;
+  }
+
+  #items-list span {
+    width: 50%;
+  }
+
+  #items-list button {
+    /*padding: 10px 20px; */
+    padding: 10px 20px;
+    /*background-color: #EEBBC3;
+    color: #232946;*/
+    background-color: #232946;
+    color: #EEBBC3;
+    /*border: none;*/
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /*font-weight: bold;*/
+    font-weight: lighter;
+    display: block;
+    margin: auto;
+  }
+}
+
+/* Media query: Medium devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  #shopping-list-app h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Media query: Large devices (laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  #shopping-list-app {
+    width: 80%;
+    max-width: 600px;
+  }
+
+  #shopping-list-app h1 {
+    font-size: 2.4rem;
+  }
+
+  #shopping-list-form input[type="text"] {
+    font-size: 1.1rem;
+  }
+
+  #shopping-list-form button {
+    padding: 10px 30px;
+    font-size: 1.1rem;
+  }
+
+  #items-list span {
+    font-size: 1.1rem;
+  }
+
+  #items-list button {
+    padding: 10px 30px;
+    font-size: 1.1rem;
+  }
 }
