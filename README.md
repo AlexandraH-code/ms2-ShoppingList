@@ -30,9 +30,10 @@ Developer - Alexandra Holstensson
 - [Testing](#testing)
   - [User Story Testing](#user-story-testing)
   - [Manual Testing](#manual-testing)
-    - [Test - Add Items](#test---add-items)
-    - [Test - Edit Items](#test---edit-items)
-    - [Test - Delete Items](#test---delete-items)
+    - [Test - Add Item](#test---add-item)
+    - [Test - Check Item](#test---check-item)
+    - [Test - Edit Item](#test---edit-item)
+    - [Test - Delete Item](#test---delete-item)
     - [Test - Shopping List Saved To Local Storage](#test---shopping-list-saved-to-local-storage)
 - [Bugs](#bugs)
 - [Validation](#validation)
@@ -46,8 +47,6 @@ Developer - Alexandra Holstensson
 - [Browser Compatibility](#browser-compatibility)
 - [Deployment](#deployment)
 - [Credits](#credits)
-  - [Code](#code)
-- [Acknowledgments](#acknowledgments)
 
 ### About 
 [Back To The Top](#table-of-contents)
@@ -58,6 +57,8 @@ My Shopping List has the following functions:
 - add items
 - edit items
 - delete items
+
+It is also possible to check out items that you have already added to your shopping cart/that you have already purchased.
 
 What is added to the shopping list is saved in localStorage. This means that what is added to the shopping list remains there even if you refresh the page or close it.
 
@@ -109,6 +110,22 @@ When I chose which colors to use on my page, I based my choice on the palette be
 [Link to the color palette that I have chosen](https://www.happyhues.co/palettes/12)
 
 ![Color Palette](assets/images/colors/colors_6_2.jpg)
+
+The colors that I have chosen to use from the palette are: 
+- #232946 - background color My Shopping List feature and buttons in the list, font color Add item button and text in the list
+- #eebbc3 - background color Add item button and list items in the list
+- #fffffe - headline
+- #B8C1EC : button hover Add item button
+
+I then used [ColorMagic's Contrast Checker](https://colormagic.app/contrast-checker) to make sure the colors I chose were okay in terms of contrast.
+
+![Image of Contrast - Headline](assets/images/colors/contrast_headline.jpg)
+
+![Image of Contrast - Buttons items list](assets/images/colors/contrast_buttons_items_list.jpg)
+
+![Image of Contrast - Add button and items](assets/images/colors/contrast_add_button_and_items.jpg)
+
+![Image of Contrast - Add button hover](assets/images/colors/contrast_button_hover.jpg)
 
 In order to create a gradient for the background color of the function itself, I used [ColorSpace](https://mycolor.space/). I have chosen to use #484266 as background color on my site.
 
@@ -193,12 +210,15 @@ To my shopping list, you could also add the ability to print the shopping list (
 - [Am I Responsive](https://ui.dev/amiresponsive) - Used to check how the site looks on different devices and how responsive it is
 - [tinypng](https://tinypng.com/) - Used to compress images
 - [HTML Validator](https://validator.w3.org/nu/) - Used to validate the HTML files
-- [CSS Validator](https://jigsaw.w3.org/css-validator/) - Used to validate the CSS file
+- [CSS Validator](https://jigsaw.w3.org/css-validator/) - Used to validate the JavaScript code
+- [JavaScript validator](https://www.site24x7.com/tools/javascript-validator.html) - Used to validate the JavaScript code
+- [JShint](https://jshint.com/) - Used to validate the JavaScript Code
 - [Open Clipart](https://openclipart.org/) - The image of the shopping basket can be found here
 - [Favicon](https://favicon.io/favicon-converter/) - Used to generate the favicon
 - [Fontawsome](https://fontawesome.com/) - For the shopping basket icon
 - [Happy Hues](https://www.happyhues.co/) - for the color palette that I have chosen to use  
 - [ColorSpace](https://mycolor.space/) - to find a color gradient to the background color on my shopping list function
+- [ColorMagic Contrast Checker](https://colormagic.app/contrast-checker) - to check the constrast of the colors that I have chosen
 - [Easils font pairing guide](https://about.easil.com/free-font-pairing-guide-templates/) - to find the fonts that I have chosen to use
 - [Google Fonts](https://fonts.google.com/) - to download the fonts that I have chosen to use (Cookie and Roboto)
 - [W3Schools](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) - to find breakpoints for different devices
@@ -217,9 +237,29 @@ To my shopping list, you could also add the ability to print the shopping list (
 | Save shopping list | As a user of the site, I want the items I have added to the shopping list to remain even if I update the site or close it. This is so that I can easily continue on an existing shopping list if I come across more items that I want to add (or if I want to edit or delete one). | The shopping list is saved (to localStorage) so it does not disappear if the user update or close the page. | &check; |
 
 #### Manual Testing
-##### Test - Add Items
-##### Test - Edit Items
-##### Test - Delete Items
+##### Test - Add Item
+
+To test that it works to add an item, I enter an item in the text field (where it says "Add items to shopping basket") and click the Add item button. The item then appears in a list that is created below the form. 
+
+![Image Of Add Item Test](assets/images/manual_testing/add/add_item.jpg)
+
+#### Test - Check Item
+
+##### Test - Edit Item
+
+To test that it is possible to edit an item, I click on the Edit button. A pop-up box opens where I can make the desired change.
+
+![Image Of Edit Item Test](assets/images/manual_testing/edit/edit_item_1_1.jpg)
+
+To save the change, I click on the Ok button. The item is then updated in the list itself. 
+
+![Image Of Edit Item Test](assets/images/manual_testing/edit/edit_item_2.jpg)
+
+If I change my mind and do not want to make any changes to the item, I click on the button that says Cancel (or Avbryt as it says on the button as the text is in Swedish for me). The item will then (for natural reasons) not change.
+
+
+
+##### Test - Delete Item
 ##### Test - Shopping List Saved To Local Storage
 
 ### Bugs
@@ -242,8 +282,24 @@ Even though the page doesn't look exactly as I had originally envisioned (with t
 ### Validation
 [Back To The Top](#table-of-contents)
 #### HTML
+
+I used [the W3C Markup Validation Service](https://validator.w3.org/) to validate the HTML. The validation passed without showing any errors.
+
+![Image That Shows The Result Of The Validation Of The HTML](assets/images/validation/HTML.jpg)
+
+[Link To The Validation Of The HTML](https://validator.w3.org/nu/?doc=https%3A%2F%2Falexandrah-code.github.io%2Fms2-ShoppingList%2F)
+
 #### CSS
+
+I used [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate the CSS. The validation passed without showing any errors.
+
+![Image That Shows The Result Of The Validation Of The HTML](assets/images/validation/CSS.jpg)
+
 #### JavaScript
+
+The  JavaScript code was validated using [JSHint](https://jshint.com/) and [site24x7's](https://www.site24x7.com/tools/javascript-validator.html) validator. No errors were found. But there were some warnings regarding the use of ES6 features. As I understand it, this means that the code is modern and utilizes the latest JavaScript standards.
+
+![Image That Shows The Result Of The Validation Of The JavaScript](assets/images/validation/JavaScript.jpg)
 
 ### Lighthouse Testing
 [Back To The Top](#table-of-contents)
@@ -291,10 +347,7 @@ Link to the project - https://alexandrah-code.github.io/ms2-ShoppingList/
 
 ### Credits
 [Back To The Top](#table-of-contents)
-#### Code
 
-### Acknowledgments
-[Back To The Top](#table-of-contents)
-
-
-
+- [W3Schools - HTML](https://www.w3schools.com/html/default.asp) - for guidance on CSS-related issues.
+- [W3Schools - CSS](https://www.w3schools.com/css/default.asp) - for guidance on CSS-related issues.
+- [W3Schools - JavaScript](https://www.w3schools.com/js/default.asp) - for guidance on JavaScript-related issues.
